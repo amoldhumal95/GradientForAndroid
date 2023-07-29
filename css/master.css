@@ -1,0 +1,289 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+body{
+    height:100vh;
+    min-width: 620px;
+    background-image: linear-gradient(60deg, #ff00aa, #0f00ff);
+}
+
+.container{
+    background-color:#ffffff25;
+    border: 2px solid #fff;
+    color: #fff;
+    width:512px;
+    padding: 50px 30px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    border-radius:10px;
+    box-shadow: 0 30px 50px rgba(0,0,0,0.35);
+}
+
+.container *:not(i){
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.title{
+    font-size:14px;
+    margin:10px;
+    height:25px;
+    width: 200px;
+    text-align:center;
+    border-radius:10px;
+    border:2px solid #fff;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.25);
+}
+
+.text{
+    font-size:14px;
+    margin:10px;
+    height:55px;
+    text-align:center;
+    border-radius:10px;
+    border:2px solid #fff;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.25);
+}
+
+.colors{
+    margin-top: 25px;
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+}
+
+input[type="color"]{
+    -webkit-appearance: none;
+    background-color: transparent;
+    width:100px;
+    height: 50px;
+    cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch{
+    border-radius: 30px;
+    border:2px solid #fff;
+
+}
+
+.buttons{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    margin:30px 0;
+    
+}
+
+.buttons button{
+    height:35px;
+    width:35px;
+    background-color:transparent;
+    border:2px solid #fff;
+    color:#fff;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.rotate-icon i{
+    transform: rotate(45deg);
+}
+
+.buttons .active{
+    border: none;
+    background-color: #4f00ff;
+    color:#ffffff;
+}
+
+
+.output{
+    background-color: transparent;
+    border-radius: 10px;
+    color:#000;
+    font-weight: 700;
+    border: 1px solid #fff;
+}
+
+#code{
+    width: 100%;
+    resize: none;
+    color:#fff;
+    padding:10px 20px;
+    background-color:transparent;
+}
+
+#copy{
+    font-size:12px;
+    background-color:#4a6ee0;
+    color:#fff;
+    position:relative;
+    left:85%;
+    bottom:10px;
+    border-radius: 3px;
+    padding:5px;
+    cursor: pointer;
+}
+
+
+
+
+/* Social Media sticky bar starts*/
+
+  
+  #fixed-social {
+    position: fixed;
+    top: 130px;
+    z-index: 1;
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    top: 290px;
+    font-size: 25px;
+  }
+  
+  #fixed-social a {
+    color: #fff;
+    display: block;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    margin-bottom: 1px;
+    z-index: 1;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.25);
+  }
+  
+  #fixed-social a:hover > span {
+    visibility: visible;
+    left: 45px;
+    opacity: 1;
+  }
+  
+  #fixed-social a span {
+    line-height: 40px;
+    left: 60px;
+    position: absolute;
+    text-align: center;
+    width: 120px;
+    visibility: hidden;
+    transition-duration: 0.5s;
+    z-index: 1;
+    opacity: 0;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.25);
+  }
+
+  .fixed-home {
+    background-color: #0f00ff;  
+    margin: 5px;
+  }
+  
+  .fixed-home span {
+    background-color: #0f00ff;
+  }
+
+  .fixed-instagram {
+    background-color: #ff0077;
+    margin: 5px;
+  }
+  
+  .fixed-instagram span {
+    background-color: #ff0077;
+  }
+  
+  .fixed-facebook {
+    background-color: #00AAE5;
+    margin: 5px;
+  }
+  
+  .fixed-facebook span {
+    background-color: #00AAE5;
+  }
+  
+  .fixed-twitter {
+    background-color: #1A91DA;
+    margin: 5px;
+  }
+  
+  .fixed-twitter span {
+    background-color: #1A91DA;
+  }
+  
+  .fixed-linkedin {
+    background-color: #0077B5;
+    margin: 5px;
+  }
+  
+  .fixed-linkedin span {
+    background: linear-gradient(to right,#0077B5 75%, #ffffff55 100%);
+  }
+  
+  .fixed-git {
+    background-color: #000;
+    margin: 5px;
+    
+  }
+  
+  .fixed-git span {
+    background: linear-gradient(to right,#000 75%, #90909055 100%);
+  }
+/* Social Media sticky bar ends */
+
+@media only screen and (width<1080px) {
+    #fixed-social {
+        position: fixed;
+        top: 0px;
+        z-index: 1;
+        padding: 0px;
+        display: flex;
+        font-size: 25px;
+      }
+      
+      #fixed-social a {
+        color: #fff;
+        display: block;
+        height: 40px;
+        position: relative;
+        text-align: center;
+        line-height: 40px;
+        width: 40px;
+        margin-bottom: 1px;
+        z-index: 1;
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.25);
+      }
+      
+      #fixed-social a:hover > span {
+        visibility: visible;
+        transform: rotate(270deg);
+        translate: -81px 45px;
+        top: 40px;
+        opacity: 1;
+        font-size: 18px;
+      }
+      
+      #fixed-social a span {
+        line-height: 40px;
+        position: absolute;
+        text-align: center;
+        width: 120px;
+        visibility: hidden;
+        transition-duration: 0s;
+        z-index: 1;
+        opacity: 0;
+        font-size: 18px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        box-shadow: -10px 10px 10px rgba(0,0,0,0.25);
+      }
+    
+  }
